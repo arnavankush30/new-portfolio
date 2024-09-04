@@ -31,6 +31,8 @@ body {
   height: 100%;
   width: 100%;
   font-family: "Gilroy";
+  color: $text-dark;
+  background-color: $primary-color;
 }
 
 #main {
@@ -38,7 +40,7 @@ body {
 }
 
 #loader {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100vh;
   background-color: $loader-color;
@@ -71,7 +73,7 @@ body {
 
 #green {
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 100%;
   height: 0;
   background-color: $green;
@@ -95,11 +97,12 @@ body {
 .accent {
   font-family: "Mazius" !important;
   color: $green;
+  font-style: italic;
 }
 
 #home {
   width: 100%;
-  height: 200vh;
+  height: 170vh;
   background-color: $primary-color;
 
   #nav {
@@ -178,11 +181,11 @@ body {
 }
 
 #frontend {
-  font-size: 8vw;
-  line-height: 1.3;
+  font-size: 9vw;
+  line-height: 1.5;
   margin: 0 2vw;
   font-family: "Mazius" !important;
-  padding: 2vw;
+  //   padding: 2vw;
 }
 
 .for {
@@ -192,4 +195,63 @@ body {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+#imagery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20vw;
+  width: 100%;
+  padding: 0 7vw;
+
+  .imglef {
+    width: 30%;
+    height: auto;
+
+    h1 {
+      font-size: 2.5vw;
+      font-weight: 500;
+    }
+  }
+  .imgrig {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: auto;
+    width: 60%;
+
+    .imgcntnr {
+      position: absolute;
+      width: 27vw;
+      height: 40vw;
+      border-radius: 2vw;
+      filter: grayscale();
+      transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    }
+  }
+}
+
+.imgcntnr:hover {
+  filter: none;
+}
+
+.imgcntnr:nth-child(1) {
+  transform: translate(-40%, -8%) rotate(-20deg);
+  background-image: url(./assets/img/card1img.png);
+  background-size: cover;
+  background-position: center;
+}
+.imgcntnr:nth-child(2) {
+  transform: translate(-15%, 0%) rotate(-15deg);
+  background-image: url(./assets/img/card2.png);
+  background-size: cover;
+  background-position: center;
+}
+.imgcntnr:nth-child(3) {
+  transform: translate(20%, 10%) rotate(-5deg);
+  background-image: url(./assets/img/card3.png);
+  background-size: cover;
+  background-position: center;
 }

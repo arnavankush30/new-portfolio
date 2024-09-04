@@ -21,6 +21,7 @@ body {
   height: 100%;
   width: 100%;
   font-family: "Gilroy";
+  color: #383838;
 }
 
 #main {
@@ -28,7 +29,7 @@ body {
 }
 
 #loader {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100vh;
   background-color: #161616;
@@ -58,7 +59,7 @@ body {
 
 #green {
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 100%;
   height: 0;
   background-color: #14cf93;
@@ -81,11 +82,12 @@ body {
 .accent {
   font-family: "Mazius" !important;
   color: #14cf93;
+  font-style: italic;
 }
 
 #home {
   width: 100%;
-  height: 200vh;
+  height: 150vh;
   background-color: #fcfaf8;
 }
 #home #nav {
@@ -158,11 +160,10 @@ body {
 }
 
 #frontend {
-  font-size: 8vw;
-  line-height: 1.3;
+  font-size: 9vw;
+  line-height: 1.5;
   margin: 0 2vw;
   font-family: "Mazius" !important;
-  padding: 2vw;
 }
 
 .for {
@@ -172,4 +173,57 @@ body {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+#imagery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20vw;
+  width: 100%;
+  padding: 0 7vw;
+}
+#imagery .imglef {
+  width: 30%;
+  height: auto;
+}
+#imagery .imglef h1 {
+  font-size: 2.5vw;
+  font-weight: 500;
+}
+#imagery .imgrig {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: auto;
+  width: 60%;
+}
+#imagery .imgrig .imgcntnr {
+  position: absolute;
+  width: 30vw;
+  height: 45vw;
+  border-radius: 2vw;
+  filter: #7a7a7a;
+}
+
+.imgcntnr:nth-child(1) {
+  transform: translate(-40%, -8%) rotate(-20deg);
+  background-image: url(./assets/img/card1img.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.imgcntnr:nth-child(2) {
+  transform: translate(-15%, 0%) rotate(-15deg);
+  background-image: url(./assets/img/card2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.imgcntnr:nth-child(3) {
+  transform: translate(20%, 10%) rotate(-5deg);
+  background-image: url(./assets/img/card3.png);
+  background-size: cover;
+  background-position: center;
 }/*# sourceMappingURL=style.css.map */
