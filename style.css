@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url(./fonts/Gilroy-Medium.e7e7c091.ttf);
+}
+@font-face {
+  font-family: "Gilroy Bold";
+  src: url(./fonts/Gilroy-SemiBold.f3ed44cd.ttf);
+}
+@font-face {
+  font-family: "Mazius";
+  src: url(./fonts/Mazius-Extraitalic.121a71a7.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  width: 100%;
+}
+
+#loader {
+  width: 100%;
+  height: 100vh;
+  background-color: #161616;
+  color: #fff;
+}
+#loader h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4vw;
+  font-weight: 500;
+}
+#loader #top-heading {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+#loader #top-heading h5 {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 300;
+  text-align: center;
+}
+
+#green {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  height: 0;
+  background-color: #14cf93;
+}
+
+.reveal .parent {
+  display: block !important;
+  overflow: hidden !important;
+}
+.reveal .parent .child {
+  display: block;
+}
+.reveal .parent .child span {
+  display: inline-block;
+}/*# sourceMappingURL=style.css.map */
