@@ -234,7 +234,7 @@ body {
 }
 
 .imgcntnr:hover {
-  filter: none;
+  filter: grayscale(0);
 }
 
 .imgcntnr:nth-child(1) {
