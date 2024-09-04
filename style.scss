@@ -143,3 +143,39 @@ body {
     }
   }
 }
+
+.row {
+  margin-top: 5vw;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: $text-dark;
+  padding: 0 7vw;
+  line-height: 1;
+  padding-right: 12vw;
+
+  h1 {
+    font-size: 13vw;
+    font-weight: 500;
+  }
+
+  .text {
+    margin-top: 5vw;
+  }
+
+  h5 {
+    opacity: 0.6;
+    font-size: 11px;
+    font-weight: 500;
+  }
+}
+
+.row:nth-child(3) {
+  margin-top: 0;
+}
+
+#frontend {
+  font-size: 9vw;
+  line-height: 1.7;
+  margin: 0 2vw;
+}
