@@ -227,14 +227,13 @@ body {
       width: 27vw;
       height: 40vw;
       border-radius: 2vw;
-      filter: grayscale();
+      filter: grayscale(1) !important;
       transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
     }
+    .imgcntnr:hover {
+      filter: grayscale(0) !important;
+    }
   }
-}
-
-.imgcntnr:hover {
-  filter: grayscale(0);
 }
 
 .imgcntnr:nth-child(1) {
